@@ -13,7 +13,7 @@ with feed_col.container(key="landing_container"):
     # Container for Admin
     with admin_col.container(key="feed_container_1"):
         admin_click = streamlit_image_coordinates(
-            source=r"static\images\admin.png", 
+            source="static/images/admin.png", 
             key="admin", 
             use_column_width=True
         )
@@ -27,7 +27,7 @@ with feed_col.container(key="landing_container"):
     # Container for Client
     with client_col.container(key="feed_container_2"):
         client_click = streamlit_image_coordinates(
-            source=r"static\images\client.png", 
+            source="static/images/client.png", 
             key="client", 
             use_column_width=True
         )
@@ -37,7 +37,7 @@ with feed_col.container(key="landing_container"):
     # Container for Employee
     with employee_col.container(key="feed_container_3"):
         employee_click = streamlit_image_coordinates(
-            source=r"static\images\employee.png", 
+            source="static/images/employee.png", 
             key="employee", 
             use_column_width=True
         )

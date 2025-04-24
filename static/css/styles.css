@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); 
+
+body * {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+Hide hamburger menu
+#MainMenu {visibility: hidden;}
+
+/* Hide sidebar completely */
+[data-testid="collapsedControl"] {
+    display: none
+}
+/* Hide top right options menu */
+.stAppDeployButton {display: none;}
+
+/* Hide fullscreen button */
+[data-testid="stElementToolbar"] {display: none;}
+
+/* Hide 'Made with Streamlit' footer */
+footer {visibility: hidden;}
+
+/* Hide image expansion/zoom options */
+img {cursor: default !important;}
+.stImage > div > img {pointer-events: none;}
+
+/* Hide any other header buttons */
+header button {display: none;}
+
+div[data-testid="stButton"] {
+    margin-top: 0px;
+}
+
+/* Hide the page navigation pills if they exist */
+div[data-testid="stPageNavButtonContainer"] {display: none;}
+
+/* Optional: Remove the header's space completely*/
+[data-testid="stHeader"] {
+    display: none !important;
+}
+
+.stMain {
+    background: linear-gradient(132deg, #F4D03F 0%, #18aa5c 100%);    
+    background-size: cover;
+    background-position: center;
+}
+
+div[data-testid="stElementContainer"] hr {
+    margin: 5px;  /* Equal vertical margins (15px top and bottom), 40px horizontal */
+    margin-top: 0px;  /* Reduce default bottom margin of the form button */
+    width: auto;
+    background: #F3E7E7;
+    border-top: 1px solid #d3d3d3;  /* Match Streamlit's default style */
+}
+
+.st-key-landing_container {
+    box-shadow: 0 2px 12px 0 hsl(32, 12%, 79%);
+    border-radius: 40px;
+    padding: 30px 30px 30px 30px;
+    background: #F3E7E7;
+}
+
+.st-key-employee_container {
+    box-shadow: 0 2px 12px 0 hsl(32, 12%, 79%);
+    border-radius: 40px;
+    padding: 40px 40px 40px 40px;
+    background: white;
+}
+
+[class*="st-key-feed_container"] {
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    border-radius: 40px;
+    padding: 40px 40px 40px 40px;
+    background: linear-gradient(132deg, #F4D03F 0%, #18aa5c 100%);     
+}
+
+[class*="st-key-dashboard_container"] {
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    border-radius: 10px;
+    padding: 40px 40px 40px 40px;
+    background: white
+    ;     
+}
+
+[class*="st-key-form_container"] {
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    border-radius: 40px;
+    padding: 40px 40px 40px 40px;
+    background: white     
+}
+
+/* div[aria-label="dialog"]>button[aria-label="Close"] {
+    display: none;
+} */
+
+.stPopoverBody {
+    max-width: 300px !important; /* Match the width above */
+    width: 300px !important;
+  }
+
+/* Optional: Adjust the form button's bottom margin to fine-tune spacing */
+div[data-testid="stFormSubmitButton"] {
+    margin-bottom: 0px;  /* Reduce default bottom margin of the form button */
+}
+/* Optional: Adjust the visitor button's top margin to fine-tune spacing */
+div[data-testid="stButton"] {
+    margin-top: 0px;  /* Reduce default top margin of the visitor button */
+}
+
+.footer-container {
+    /* background-color: #F9B233; Gold background color */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.logo-container img {
+    height: 50px;
+    width: auto;
+}
+.footer-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #000;
+}
+.footer-subtitle {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #000;
+}
+
+.footer-college {
+    font-size: 16px;
+    margin: 5px 0 10px 0;
+    color: #000;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.footer-links a:hover {
+    background-color: rgba(0,0,0,0.1);
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #544c4c;
+    margin-top: 10px;
+}
+
+/* Base style for all top columns */
+[class*="st-key-top_"] {
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.15),
+        0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for all top columns */
+[class*="st-key-top_"]:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top 1 - Gold */
+[class*="st-key-top_1"] {
+    background: linear-gradient(135deg, #ffeb3b, #fbc02d);
+    color: #3c2f00;
+}
+
+[class*="st-key-top_1"] h3 {
+    color: #3c2f00;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[class*="st-key-top_1"]::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 26px;
+    opacity: 0.9;
+}
+
+/* Top 2 - Silver */
+[class*="st-key-top_2"] {
+    background: linear-gradient(135deg, #e0e0e0, #bdbdbd);
+    color: #333333;
+}
+
+[class*="st-key-top_2"] h3 {
+    color: #333333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[class*="st-key-top_2"]::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 26px;
+    opacity: 0.9;
+}
+
+/* Top 3 - Bronze */
+[class*="st-key-top_3"] {
+    background: linear-gradient(135deg, #d4a373, #b87333);
+    color: #3c2f00;
+}
+
+[class*="st-key-top_3"] h3 {
+    color: #3c2f00;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[class*="st-key-top_3"]::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 26px;
+    opacity: 0.9;
+}
+
+/* Style for employee name and rating */
+[class*="st-key-top_"] p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Animation for badge on hover */
+[class*="st-key-top_"]:hover::before {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+
+[class*="st-key-top_"]::before {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add custom styling for the data editor */
+.dvn-scroller.stDataFrameGlideDataEditor {
+    box-shadow: #0f9a3d;
+    border: 1px solid #f3f3f3;
+}
